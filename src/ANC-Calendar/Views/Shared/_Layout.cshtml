@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"]</title>
+
+	<!-- Css -->
+	<link rel="stylesheet" asp-href-include="~/css/*.css" />
+	<!-- Js -->
+	<script src="~/js/system.js"></script>
+	<script src="~/js/rx.js"></script>
+	<script src="~/js/jquery.js"></script>
+	<script src="~/js/bootstrap.js"></script>
+	<!-- Configure SystemJS -->
+	<script>
+		//System.config({ defaultJSExtensions: true });
+		System.config({
+			packages: {
+				app: {
+					defaultExtension: 'js'
+				}
+			}
+		});
+		//console.log("***Configured system js...")
+		System.import('app/boot').then(null, console.error.bind(console));
+	</script>
+	<script src="~/js/typescript.js"></script>
+	<script src="~/js/angular2/angular2.dev.js"></script>
+	<script src="~/js/angular2/angular2-polyfills.js"></script>
+	<script src="~/js/angular2/http.dev.js"></script>
+	<script src="~/js/angular2/router.dev.js"></script>
+</head>
+<base href="/" />
+<body>
+	<div>
+		@RenderBody()
+	</div>
+</body>
+</html>

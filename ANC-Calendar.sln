@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B79E2D05-9E5F-4FAA-A18E-A81E247671BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{17218CFE-DC4A-4D79-BF0E-AC708F388844}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ANC-Calendar", "src\ANC-Calendar\ANC-Calendar.xproj", "{574E97AA-FF3B-4428-B327-58D55F31FC78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{574E97AA-FF3B-4428-B327-58D55F31FC78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{574E97AA-FF3B-4428-B327-58D55F31FC78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{574E97AA-FF3B-4428-B327-58D55F31FC78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{574E97AA-FF3B-4428-B327-58D55F31FC78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{574E97AA-FF3B-4428-B327-58D55F31FC78} = {B79E2D05-9E5F-4FAA-A18E-A81E247671BE}
+	EndGlobalSection
+EndGlobal
