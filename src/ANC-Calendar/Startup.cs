@@ -23,10 +23,10 @@ namespace ANC_Calendar
 			loggerFactory.AddConsole(Configuration.GetSection("Logging"));
 			loggerFactory.AddDebug();
 
-			if (env.IsDevelopment())
-            {
+			//if (env.IsDevelopment())
+            //{
                 app.UseDeveloperExceptionPage();
-            }
+            //}
 
 			//app.Run(async (context) =>
 			//{
