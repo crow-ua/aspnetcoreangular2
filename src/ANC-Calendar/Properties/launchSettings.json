@@ -11,6 +11,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
+      "anonymousAuthentication": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -18,7 +19,15 @@
     "ANC_Calendar": {
       "commandName": "Project",
       "launchBrowser": true,
+      "anonymousAuthentication": true,
       "launchUrl": "http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "web": {
+      "commandName": "web",
+      "anonymousAuthentication": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
