@@ -65,10 +65,10 @@ namespace ANC_Calendar
 		{
 			// Set up configuration sources.
 			var builder = new ConfigurationBuilder();
-			builder.SetBasePath(Directory.GetCurrentDirectory());
+			//builder.SetBasePath(Directory.GetCurrentDirectory());
+			builder.SetBasePath(env.ContentRootPath);
 			builder.AddJsonFile("appsettings.json");
 			//builder.AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
-
 			builder.AddEnvironmentVariables();
 			Configuration = builder.Build();
 		}
